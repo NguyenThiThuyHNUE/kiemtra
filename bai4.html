@@ -1,0 +1,40 @@
+<!--Câu 4:-->
+<!--Viết hàm createArray() nhận đầu vào là một mảng 2 chiều,-->
+<!--đầu ra là mảng 1 chiều chứa tất cả phần tử của mảng đầu vào.-->
+<!--Nếu là index của hàng là số lẻ thì đảo ngược vị trí các phần tử thuộc hàng đó.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ];
+    let  arr1=[]
+    function createArray() {
+        if((arr.length-1)%2==0){
+            for (let i=0;i<arr.length;i++){
+                for (let j=0;j<arr[i].length;j++){
+                    arr1.push(arr[i][j]);
+                }
+            }console.log(arr1)
+        } else {
+            for (let i=0;i<arr.length;i++){
+                for (let j=0;j<arr[i].length;j++){
+                    arr1.push(arr[i][j]);
+
+                }
+            }console.log(arr1.reverse())
+        }
+
+    }
+    createArray();
+</script>
+</body>
+</html>
